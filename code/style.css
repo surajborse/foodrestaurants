@@ -70,7 +70,7 @@ padding: 5px 17px !important ;
 
 .banner{
    
-    height: 110vh;
+    height: 100vh;
 
    background-image: url(../img/backgound1.png);
    background-repeat: no-repeat;
@@ -224,6 +224,15 @@ h1 span{
     height: auto;
     margin-top: 100px;
     margin-bottom: 60px;
+}
+.menu .card{
+    width: 100%;
+    height: 300px;
+}
+.menu .card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 .menu .card a{
     display: inline-block !important;
