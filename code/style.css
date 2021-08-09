@@ -10,11 +10,13 @@
 }
 header{
     width: 100%;
+    height: 60px;
     position: fixed;
-    background-color: #fff;
+    background:#ffffff !important;
     z-index: 9999;
     
 }
+
 html,body{
     width: 100%;
   margin: 0;
@@ -27,20 +29,35 @@ html,body{
 margin-right: 10px;
 
 color: #000 !important;
-padding: 5px 17px !important ;
+padding: 2px 17px !important ;
 }
 .nav-link.active{
-    background-color: #f53b57 !important;
-   color: #fff !important;
-   border-radius: 20px !important;
-   padding: 3px 20px !important ;
-}.nav-link:hover{
-   background-color: #f53b57 !important;
+   background: #f53b57;
    color: #fff !important;
    border-radius: 20px !important;
    padding: 3px 20px !important ;
 }
+.nav-link:hover{
+    border-bottom: 2px solid #f53b57;
+    color: #000 !important;
+    border-radius: 10px !important;
+    padding: 3px 20px !important ;
+ }
+.navbar-col{
+    background: #ffffff !important;
+  
+   height: auto;
+   
+}
 
+.navbar-col .nav-link{
+    display: inline-block !important;
+    text-align: center;
+}
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.55);
+    border: none !important;
+}
 .logo {
     font-family: 'Lobster', cursive;
     color: #f53b57;
@@ -69,15 +86,17 @@ padding: 5px 17px !important ;
 
 
 .banner{
-   
-    height: 100vh;
-
-   background-image: url(../img/backgound1.png);
+    width: 100% !important;
+   height: 100vh!important;
+   background-image: url(../img/backgound1.png) !important;
    background-repeat: no-repeat;
    background-size: cover;
-   background-position: 50% 10%;
+   background-position: center;
+   
 }
 .home-page{
+    width: 100%;
+    height: auto;
     text-align: center;
     position: absolute;
     top: 10%;
@@ -121,17 +140,11 @@ padding: 5px 17px !important ;
     justify-content: space-between;
     cursor: pointer;
 }
-.arrow-bnt a{
-    padding: 3px 11px;
-    background-color: black;
-    border-radius: 50%;
-    color: #fff !important;
-    
 
-}
 .home-page img{
-    width: 600px;
-    height: 350px;
+    margin: auto !important;
+    width: 400px !important;
+    height:350px !important; 
     position: relative;
     margin-top: 5px;
    
@@ -139,43 +152,47 @@ padding: 5px 17px !important ;
 
 .hero{
     width: 100%;
-    background-image: url(../img/background3.png);
-    height: auto;
-    margin-bottom: 20px;
+    height: auto !important;
+   
+    margin-top: 50px !important;
+    margin-bottom: 100px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
 }
-.hero-box{
-    margin-top: 30px;
-    display: flex;
+.hero .card img{
+    transform: scale(-1);
+    transition: 0.9s ease-in-out;
+    }
+.hero .card img:hover{
+    transform: scale(1);
+    z-index: 9999;
+    }
+.hero .card-title{
+    padding: 20px;
+    
 }
-.img-box .card
-{
-    border-radius: 50%;
-}
-.hero .img-box{
-    margin: auto !important;
-}
-.hero p{
-    margin-top: 30px;
-    font-weight:800;
-    line-height: 20px;
-    font-family: 'Lobster', cursive;
-    letter-spacing: 2px;
-}
-.hero span{
-    font-size: 30px ;
-    margin-left: 10px;
-    color: #f53b57;
+.hero .card-title p{
+    margin: 0px !important;
+    padding: 0px !important;
 }
 
-.hero .span1{
-    font-size: 30px ;
-    margin-right: -10px;
-    color: #f53b57;
+.card-title .bi-check2{
+    font-size: 15px;
+    margin: 5px;
+    color: #e67e22;
 }
+.hero .card-title h4{
+    color: #e67e22;
+    font-family: 'Pacifico', cursive;
+    margin: 10px 0px 5px;
+    font-size: 1.3rem;
+}
+
+
+
+
 
 
 
@@ -258,6 +275,7 @@ h1 span{
     color: #f53b57;
 }
 .menu .menu-btn{
+    margin-top: 25px;
     display:flex;
     justify-content: end;
 }
@@ -421,6 +439,7 @@ text-decoration: none;
     opacity: 0.1;
 }
 
+
 .item .team-icon{
     position: absolute;
     top: 50%;
@@ -462,8 +481,7 @@ text-decoration: none;
 .bookt{
     width: 100%;
     height: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+   
     background: url(../img/aboutbg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -472,8 +490,7 @@ text-decoration: none;
 .form{
   width: 100%;
  border-radius: 10px;
-    margin-top: 20px;
-   padding: 30px;
+margin-top: 20px;
    margin-bottom: 20px;
    background:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8));
   
@@ -536,8 +553,7 @@ text-decoration: none;
 .free-delivery{
     width: 100%;
     height: auto;
-    margin-top: 50px;
-    
+   
     background:linear-gradient(rgba(255, 249, 249, 0.918),rgba(255, 249, 249, 0.918)), url(../img/background3.png) ;
     background-repeat: no-repeat;
     background-size: cover;
@@ -565,7 +581,7 @@ text-decoration: none;
 
 .contact{
     width: 100%;
-    height:auto  !important;
+    height: 100vh !important;
     background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../img/background2.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
@@ -573,15 +589,17 @@ text-decoration: none;
    
 }
 
-.contact-box{
-   
+.contact .contact-box{
+    
+    margin:auto;
+margin-top: 150px !important;
    height: auto  !important;
     background-color: #fff;
     box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.75);
     margin-bottom: 50px!important;
-    margin: auto !important;
+   
     
 }
 .contact .con-form .input-grp{
@@ -595,6 +613,7 @@ text-decoration: none;
     padding: 0px 10px ;
 
 }
+
 .input-grp textarea{
     height: 100px !important;
 }
@@ -656,6 +675,10 @@ footer .bottom-box{
     padding: 5px;
 }
 
+@media (max-width:980px){
+    .hero .hero-card{
+        margin-top: 20px !important;
+    }
 @media(max-width:768px){
     .home-page h3 {
         font-size: 1.9rem;
@@ -670,8 +693,13 @@ footer .bottom-box{
     .con-img{
         display: none;
     }
+    .contact{
+        height: auto !important;
+        padding: 20px;
+    }
     
 }
+
 @media(max-width:555px){
     .home-page h3 {
         font-size: 1.5rem;
@@ -681,12 +709,9 @@ footer .bottom-box{
         height:290px;
 
     }
-    .hero .card{
-        width: 250px;
-        height: 250px;
-        margin: auto !important;
-        margin-bottom: 20px !important;
-    }
+   .hero .card{
+       margin-top: 30px;
+   }
     .hero p{
         font-size: 12px;
     font-weight: 900;
@@ -706,6 +731,10 @@ footer .bottom-box{
         width: 400px;
         height:250px;
 
+    }
+    .menu .card {
+       
+        height: 350px;
     }
     .form p{
         text-align: start;
